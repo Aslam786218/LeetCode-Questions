@@ -7,4 +7,4 @@ class Solution:
             if required in seen:
                 return[seen[required],i]
 
-        seen[num] = i
+            seen[num] = i
