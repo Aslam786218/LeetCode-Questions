@@ -18,12 +18,10 @@ class Solution(object):
                 max_profit = profit
 
         return max_profit
-       
+
+
+
 prices = [1,4,5,7,3,4]
-
-
 s = Solution()
-
 result = s.maxProfit(prices)
-
 print(result)
