@@ -1,3 +1,5 @@
+# Solution using the set()
+
 class Solution:
     def containsDuplicate(self, nums):
         seen = set()
@@ -16,3 +18,6 @@ nums = [1, 2, 3, 1]
 solution = Solution()
 result = solution.containsDuplicate(nums)
 print(result)
+
+
+
