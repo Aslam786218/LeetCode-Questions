@@ -23,7 +23,7 @@ print(result)
 
 # Solution using the dictionary
 
-class Solution:
+class Answer:
     def containsDuplicate(self,nums):
         seen = {}
         for num in nums:
@@ -34,10 +34,8 @@ class Solution:
 
         return False
 
+# creating object and calling function
 nums = [1, 2, 3, 1]
-
-solution = Solution()
-
+solution = Answer()
 result = solution.containsDuplicate(nums)
-
 print(result)
