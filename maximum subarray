@@ -18,6 +18,8 @@ class Solution(object):
 
         return max_sum
 
+# creating object and calling the  function
+
 nums = [1,4,7,6,8,9,3,2]
 
 c1 = Solution()
