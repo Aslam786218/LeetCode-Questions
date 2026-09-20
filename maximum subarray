@@ -21,6 +21,37 @@ class Solution(object):
 # creating object and calling the  function
 
 nums = [1,4,7,6,8,9,3,2]
+c1 = Solution()
+result = c1.maxSubArray(nums)
+print(result)
+
+
+
+# Solution 2
+
+class Solution(object):
+    def maxSubArray(self, nums):
+        
+        current_sum = nums[0]
+        max_sum = nums[0]
+
+        for num in nums[1:]:
+            current_sum = max(current_sum + num,num)
+
+            if current_sum + num > num:
+                current_sum += num
+
+            else:
+                current_sum = num
+
+
+            if current_sum > max_sum:
+                max_sum = current_sum
+
+        return max_sum
+
+
+nums = [1,4,7,6,8,9,3,2]
 
 c1 = Solution()
 result = c1.maxSubArray(nums)
